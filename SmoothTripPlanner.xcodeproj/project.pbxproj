@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2099C931B030C959333B67B8 /* Pods_SmoothTripPlanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761A4BA67522F530FF2A4EF6 /* Pods_SmoothTripPlanner.framework */; };
 		FF924DBF2C0CB7810074DAF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF924DBE2C0CB7810074DAF0 /* AppDelegate.swift */; };
 		FF924DC12C0CB7810074DAF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF924DC02C0CB7810074DAF0 /* SceneDelegate.swift */; };
 		FF924DC32C0CB7810074DAF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF924DC22C0CB7810074DAF0 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52392386DCA05B2D5B507E6F /* Pods-SmoothTripPlanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoothTripPlanner.release.xcconfig"; path = "Target Support Files/Pods-SmoothTripPlanner/Pods-SmoothTripPlanner.release.xcconfig"; sourceTree = "<group>"; };
+		761A4BA67522F530FF2A4EF6 /* Pods_SmoothTripPlanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmoothTripPlanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A51046D966DA0A259A8AECC1 /* Pods-SmoothTripPlanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoothTripPlanner.debug.xcconfig"; path = "Target Support Files/Pods-SmoothTripPlanner/Pods-SmoothTripPlanner.debug.xcconfig"; sourceTree = "<group>"; };
 		FF924DBB2C0CB7810074DAF0 /* SmoothTripPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmoothTripPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF924DBE2C0CB7810074DAF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF924DC02C0CB7810074DAF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2099C931B030C959333B67B8 /* Pods_SmoothTripPlanner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14216804B02125FC196DE640 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A51046D966DA0A259A8AECC1 /* Pods-SmoothTripPlanner.debug.xcconfig */,
+				52392386DCA05B2D5B507E6F /* Pods-SmoothTripPlanner.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		641BF2A78789302D569CCEC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				761A4BA67522F530FF2A4EF6 /* Pods_SmoothTripPlanner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FF924DB22C0CB7810074DAF0 = {
 			isa = PBXGroup;
 			children = (
 				FF924DBD2C0CB7810074DAF0 /* SmoothTripPlanner */,
 				FF924DBC2C0CB7810074DAF0 /* Products */,
+				14216804B02125FC196DE640 /* Pods */,
+				641BF2A78789302D569CCEC2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF924DCF2C0CB7820074DAF0 /* Build configuration list for PBXNativeTarget "SmoothTripPlanner" */;
 			buildPhases = (
+				F089FC12F6EF9878856A073D /* [CP] Check Pods Manifest.lock */,
 				FF924DB72C0CB7810074DAF0 /* Sources */,
 				FF924DB82C0CB7810074DAF0 /* Frameworks */,
 				FF924DB92C0CB7810074DAF0 /* Resources */,
+				068FB249494C582949CF936D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		068FB249494C582949CF936D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmoothTripPlanner/Pods-SmoothTripPlanner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmoothTripPlanner/Pods-SmoothTripPlanner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmoothTripPlanner/Pods-SmoothTripPlanner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F089FC12F6EF9878856A073D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmoothTripPlanner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FF924DB72C0CB7810074DAF0 /* Sources */ = {
@@ -287,6 +356,7 @@
 		};
 		FF924DD02C0CB7820074DAF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A51046D966DA0A259A8AECC1 /* Pods-SmoothTripPlanner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +384,7 @@
 		};
 		FF924DD12C0CB7820074DAF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52392386DCA05B2D5B507E6F /* Pods-SmoothTripPlanner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
