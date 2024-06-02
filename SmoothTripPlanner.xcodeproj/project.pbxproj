@@ -10,10 +10,11 @@
 		2099C931B030C959333B67B8 /* Pods_SmoothTripPlanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761A4BA67522F530FF2A4EF6 /* Pods_SmoothTripPlanner.framework */; };
 		FF924DBF2C0CB7810074DAF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF924DBE2C0CB7810074DAF0 /* AppDelegate.swift */; };
 		FF924DC12C0CB7810074DAF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF924DC02C0CB7810074DAF0 /* SceneDelegate.swift */; };
-		FF924DC32C0CB7810074DAF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF924DC22C0CB7810074DAF0 /* ViewController.swift */; };
 		FF924DC62C0CB7810074DAF0 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FF924DC52C0CB7810074DAF0 /* Base */; };
 		FF924DC82C0CB7820074DAF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF924DC72C0CB7820074DAF0 /* Assets.xcassets */; };
 		FF924DCB2C0CB7820074DAF0 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FF924DCA2C0CB7820074DAF0 /* Base */; };
+		FF924DD82C0CBE670074DAF0 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF924DD72C0CBE670074DAF0 /* LoginView.swift */; };
+		FF924DDA2C0CBF530074DAF0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF924DD92C0CBF530074DAF0 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,11 +24,12 @@
 		FF924DBB2C0CB7810074DAF0 /* SmoothTripPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmoothTripPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF924DBE2C0CB7810074DAF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF924DC02C0CB7810074DAF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FF924DC22C0CB7810074DAF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FF924DC52C0CB7810074DAF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF924DC72C0CB7820074DAF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF924DCA2C0CB7820074DAF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF924DCC2C0CB7820074DAF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF924DD72C0CBE670074DAF0 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FF924DD92C0CBF530074DAF0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +50,6 @@
 				A51046D966DA0A259A8AECC1 /* Pods-SmoothTripPlanner.debug.xcconfig */,
 				52392386DCA05B2D5B507E6F /* Pods-SmoothTripPlanner.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,15 +82,40 @@
 		FF924DBD2C0CB7810074DAF0 /* SmoothTripPlanner */ = {
 			isa = PBXGroup;
 			children = (
+				FF924DD62C0CBE400074DAF0 /* Views */,
+				FF924DD52C0CBE3B0074DAF0 /* Models */,
+				FF924DD42C0CBE2C0074DAF0 /* Controllers */,
 				FF924DBE2C0CB7810074DAF0 /* AppDelegate.swift */,
 				FF924DC02C0CB7810074DAF0 /* SceneDelegate.swift */,
-				FF924DC22C0CB7810074DAF0 /* ViewController.swift */,
 				FF924DC42C0CB7810074DAF0 /* Main.storyboard */,
 				FF924DC72C0CB7820074DAF0 /* Assets.xcassets */,
 				FF924DC92C0CB7820074DAF0 /* LaunchScreen.storyboard */,
 				FF924DCC2C0CB7820074DAF0 /* Info.plist */,
 			);
 			path = SmoothTripPlanner;
+			sourceTree = "<group>";
+		};
+		FF924DD42C0CBE2C0074DAF0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FF924DD92C0CBF530074DAF0 /* LoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FF924DD52C0CBE3B0074DAF0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FF924DD62C0CBE400074DAF0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FF924DD72C0CBE670074DAF0 /* LoginView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,8 +233,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF924DC32C0CB7810074DAF0 /* ViewController.swift in Sources */,
 				FF924DBF2C0CB7810074DAF0 /* AppDelegate.swift in Sources */,
+				FF924DD82C0CBE670074DAF0 /* LoginView.swift in Sources */,
+				FF924DDA2C0CBF530074DAF0 /* LoginViewController.swift in Sources */,
 				FF924DC12C0CB7810074DAF0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,7 +299,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -287,7 +314,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -335,7 +362,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -344,7 +371,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -369,6 +396,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -397,6 +425,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

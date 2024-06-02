@@ -1,20 +1,24 @@
 PODS:
   - SnapKit (5.0.1)
   - TextFieldEffects (1.6.0)
+  - Then (3.0.0)
 
 DEPENDENCIES:
   - SnapKit (~> 5.0.0)
   - TextFieldEffects
+  - Then
 
 SPEC REPOS:
   trunk:
     - SnapKit
     - TextFieldEffects
+    - Then
 
 SPEC CHECKSUMS:
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
+  Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
 
-PODFILE CHECKSUM: 6a8cb88e54567e189a1b4a37c96740c6fd80995c
+PODFILE CHECKSUM: 163da43b98f1a8f327dfacebdbc460a64146ca2d
 
 COCOAPODS: 1.15.2
