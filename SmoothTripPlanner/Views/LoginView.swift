@@ -8,45 +8,54 @@
 import UIKit
 import SnapKit
 import TextFieldEffects
+import Then
 
 final class LoginView: UIView {
     
-    // StackView 생성
-    private let stackView: UIStackView = {
-        let sv = UIStackView()
-        sv.axis = .vertical
-        sv.alignment = .center
-        sv.spacing = 20 // 각 뷰 사이의 간격
-        return sv
-    }()
+    // 제목
+    private let nameLabel = UILabel().then {
+        $0.text = "ABCDE" // 제목 미정..
+        $0.textColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1) // 색깔 변경 예정
+        $0.font = UIFont.systemFont(ofSize: 40, weight: .heavy)
+        $0.textAlignment = .center
+    }
     
-    // 이메일 입력 필드 생성
-    private let emailTextField: HoshiTextField = {
-        let textField = HoshiTextField()
-        textField.placeholder = "이메일"
-        textField.borderActiveColor = .blue // 활성 상태일 때의 테두리 색상
-        textField.borderInactiveColor = .gray // 비활성 상태일 때의 테두리 색상
-        return textField
-    }()
+    // 로그인 입력 필드
+    private let emailTextField = HoshiTextField().then {
+        $0.placeholder = "로그인"
+        $0.placeholderColor = .gray
+        $0.borderActiveColor = .gray
+        $0.borderInactiveColor = .gray
+        $0.placeholderFontScale = 1
+    }
     
-    // 비밀번호 입력 필드 생성
-    private let passwordTextField: HoshiTextField = {
-        let textField = HoshiTextField()
-        textField.placeholder = "비밀번호"
-        textField.isSecureTextEntry = true // 비밀번호 입력을 숨김
-        textField.borderActiveColor = .blue // 활성 상태일 때의 테두리 색상
-        textField.borderInactiveColor = .gray // 비활성 상태일 때의 테두리 색상
-        return textField
-    }()
+    // 비밀번호 입력 필드
+    private let passwordTextField = HoshiTextField().then {
+        $0.placeholder = "패스워드"
+        $0.placeholderColor = .gray
+        $0.borderActiveColor = .gray
+        $0.borderInactiveColor = .gray
+        $0.placeholderFontScale = 1
+    }
     
-    // 로그인 버튼 생성
-    private let registerButton: UIButton = {
-        let button = UIButton()
-        button.setTitle("회원가입", for: .normal)
-        button.setTitleColor(.white, for: .normal)
-        button.backgroundColor = .blue
-        return button
-    }()
+    // 로그인 버튼
+    private let loginButton = UIButton().then {
+        $0.setTitle("로그인", for: .normal)
+        $0.setTitleColor(.white, for: .normal)
+        $0.backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
+        $0.titleLabel?.font = UIFont.systemFont(ofSize: 20)
+        $0.layer.cornerRadius = 5
+    }
+    
+    // 회원가입 버튼
+    private let signupButton = UIButton().then {
+        $0.setTitle("회원가입", for: .normal)
+        $0.setTitleColor(.white, for: .normal)
+        $0.backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
+        $0.titleLabel?.font = UIFont.systemFont(ofSize: 20)
+        $0.layer.cornerRadius = 5
+    }
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -65,20 +74,42 @@ final class LoginView: UIView {
     }
     
     private func addViews() {
-        // StackView에 입력 필드, 버튼, 레이블 추가
-        stackView.addArrangedSubview(emailTextField)
-        stackView.addArrangedSubview(passwordTextField)
-        stackView.addArrangedSubview(registerButton)
-        
-        // StackView를 뷰에 추가
-        addSubview(stackView)
+        addSubview(nameLabel)
+        addSubview(emailTextField)
+        addSubview(passwordTextField)
+        addSubview(loginButton)
+        addSubview(signupButton)
     }
     
     private func setConstraints() {
-        // StackView의 제약 조건 설정
-        stackView.snp.makeConstraints { make in
-            make.centerX.centerY.equalToSuperview()
+        nameLabel.snp.makeConstraints {
+            $0.top.equalTo(self.safeAreaLayoutGuide).inset(140)
+            $0.leading.trailing.equalTo(self.safeAreaLayoutGuide).inset(100)
         }
+        
+        emailTextField.snp.makeConstraints {
+            $0.top.equalTo(nameLabel).inset(80)
+            $0.leading.trailing.equalTo(self.safeAreaLayoutGuide).inset(40)
+            $0.height.equalTo(70)
+        }
+        
+        passwordTextField.snp.makeConstraints {
+            $0.top.equalTo(emailTextField).inset(80)
+            $0.leading.trailing.equalTo(self.safeAreaLayoutGuide).inset(40)
+            $0.height.equalTo(70)
+        }
+        
+        loginButton.snp.makeConstraints {
+            $0.top.equalTo(passwordTextField).inset(100)
+            $0.leading.trailing.equalTo(self.safeAreaLayoutGuide).inset(40)
+            $0.height.equalTo(50)
+        }
+        
+        signupButton.snp.makeConstraints {
+            $0.top.equalTo(loginButton).inset(70)
+            $0.leading.trailing.equalTo(self.safeAreaLayoutGuide).inset(40)
+            $0.height.equalTo(50)
+        }
+        
     }
 }
-
