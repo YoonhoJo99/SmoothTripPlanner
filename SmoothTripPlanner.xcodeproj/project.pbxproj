@@ -10,6 +10,9 @@
 		2099C931B030C959333B67B8 /* Pods_SmoothTripPlanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761A4BA67522F530FF2A4EF6 /* Pods_SmoothTripPlanner.framework */; };
 		FF8970F02C0D58B2004E1557 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8970EF2C0D58B2004E1557 /* SignUpViewController.swift */; };
 		FF8970F42C0D590B004E1557 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8970F32C0D590B004E1557 /* SignUpView.swift */; };
+		FF8970F92C0D7613004E1557 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF8970F82C0D7613004E1557 /* GoogleService-Info.plist */; };
+		FF8970FB2C0D7888004E1557 /* SignUpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8970FA2C0D7888004E1557 /* SignUpManager.swift */; };
+		FF8970FD2C0D839F004E1557 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8970FC2C0D839F004E1557 /* LoginManager.swift */; };
 		FF924DBF2C0CB7810074DAF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF924DBE2C0CB7810074DAF0 /* AppDelegate.swift */; };
 		FF924DC12C0CB7810074DAF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF924DC02C0CB7810074DAF0 /* SceneDelegate.swift */; };
 		FF924DC62C0CB7810074DAF0 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FF924DC52C0CB7810074DAF0 /* Base */; };
@@ -25,6 +28,10 @@
 		A51046D966DA0A259A8AECC1 /* Pods-SmoothTripPlanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoothTripPlanner.debug.xcconfig"; path = "Target Support Files/Pods-SmoothTripPlanner/Pods-SmoothTripPlanner.debug.xcconfig"; sourceTree = "<group>"; };
 		FF8970EF2C0D58B2004E1557 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		FF8970F32C0D590B004E1557 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		FF8970F72C0D75FC004E1557 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FF8970F82C0D7613004E1557 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FF8970FA2C0D7888004E1557 /* SignUpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpManager.swift; sourceTree = "<group>"; };
+		FF8970FC2C0D839F004E1557 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
 		FF924DBB2C0CB7810074DAF0 /* SmoothTripPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmoothTripPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF924DBE2C0CB7810074DAF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF924DC02C0CB7810074DAF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +58,7 @@
 		14216804B02125FC196DE640 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				FF8970F72C0D75FC004E1557 /* GoogleService-Info.plist */,
 				A51046D966DA0A259A8AECC1 /* Pods-SmoothTripPlanner.debug.xcconfig */,
 				52392386DCA05B2D5B507E6F /* Pods-SmoothTripPlanner.release.xcconfig */,
 			);
@@ -68,6 +76,7 @@
 		FF924DB22C0CB7810074DAF0 = {
 			isa = PBXGroup;
 			children = (
+				FF8970F82C0D7613004E1557 /* GoogleService-Info.plist */,
 				FF924DBD2C0CB7810074DAF0 /* SmoothTripPlanner */,
 				FF924DBC2C0CB7810074DAF0 /* Products */,
 				14216804B02125FC196DE640 /* Pods */,
@@ -111,6 +120,8 @@
 		FF924DD52C0CBE3B0074DAF0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FF8970FC2C0D839F004E1557 /* LoginManager.swift */,
+				FF8970FA2C0D7888004E1557 /* SignUpManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -185,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF924DC82C0CB7820074DAF0 /* Assets.xcassets in Resources */,
+				FF8970F92C0D7613004E1557 /* GoogleService-Info.plist in Resources */,
 				FF924DCB2C0CB7820074DAF0 /* Base in Resources */,
 				FF924DC62C0CB7810074DAF0 /* Base in Resources */,
 			);
@@ -240,9 +252,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF924DBF2C0CB7810074DAF0 /* AppDelegate.swift in Sources */,
+				FF8970FD2C0D839F004E1557 /* LoginManager.swift in Sources */,
 				FF924DD82C0CBE670074DAF0 /* LoginView.swift in Sources */,
 				FF924DDA2C0CBF530074DAF0 /* LoginViewController.swift in Sources */,
 				FF924DC12C0CB7810074DAF0 /* SceneDelegate.swift in Sources */,
+				FF8970FB2C0D7888004E1557 /* SignUpManager.swift in Sources */,
 				FF8970F42C0D590B004E1557 /* SignUpView.swift in Sources */,
 				FF8970F02C0D58B2004E1557 /* SignUpViewController.swift in Sources */,
 			);

@@ -7,9 +7,13 @@ target 'SmoothTripPlanner' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
+  # Firebase
+  pod 'Firebase/Analytics' # Google Analytics
 
   # Pods for SmoothTripPlanner
   pod 'SnapKit', '~> 5.0.0'
   pod 'TextFieldEffects'
   pod 'Then'
+  
+  pod 'Firebase/Auth'
 end

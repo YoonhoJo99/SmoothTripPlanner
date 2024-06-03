@@ -48,7 +48,7 @@ final class SignUpView: UIView {
     }
     
     // 비밀번호 재확인 입력 필드
-    private let checkPasswordTextField = HoshiTextField().then {
+    private let confirmPasswordTextField = HoshiTextField().then {
         $0.placeholder = "위와 동일한 패스워드를 입력해 주세요"
         $0.placeholderColor = .gray
         $0.borderActiveColor = .gray
@@ -66,7 +66,6 @@ final class SignUpView: UIView {
     }
     
     // 네비게이션 바
-
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -89,7 +88,7 @@ final class SignUpView: UIView {
         addSubview(nameTextField)
         addSubview(emailTextField)
         addSubview(passwordTextField)
-        addSubview(checkPasswordTextField)
+        addSubview(confirmPasswordTextField)
         addSubview(signUpButton)
     }
     
@@ -117,16 +116,38 @@ final class SignUpView: UIView {
             $0.height.equalTo(70)
         }
         
-        checkPasswordTextField.snp.makeConstraints {
+        confirmPasswordTextField.snp.makeConstraints {
             $0.top.equalTo(passwordTextField).inset(80)
             $0.leading.trailing.equalTo(self.safeAreaLayoutGuide).inset(40)
             $0.height.equalTo(70)
         }
     
         signUpButton.snp.makeConstraints {
-            $0.top.equalTo(checkPasswordTextField).inset(120)
+            $0.top.equalTo(confirmPasswordTextField).inset(120)
             $0.leading.trailing.equalTo(self.safeAreaLayoutGuide).inset(40)
             $0.height.equalTo(50)
         }
+    }
+    
+    
+    // - 나중에 리팩토링 예정 -
+    // 이름 텍스트를 반환하는 메서드
+    func getName() -> String? {
+        return nameTextField.text
+    }
+    
+    // 이메일 텍스트를 반환하는 메서드
+    func getEmail() -> String? {
+        return emailTextField.text
+    }
+    
+    // 비밀번호 텍스트를 반환하는 메서드
+    func getPassword() -> String? {
+        return passwordTextField.text
+    }
+    
+    // 비밀번호 확인 텍스트를 반환하는 메서드
+    func getConfirmPassword() -> String? {
+        return confirmPasswordTextField.text
     }
 }

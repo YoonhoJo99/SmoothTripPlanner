@@ -39,7 +39,7 @@ final class LoginView: UIView {
     }
     
     // 로그인 버튼
-    private let loginButton = UIButton().then {
+    lazy var loginButton = UIButton().then {
         $0.setTitle("로그인", for: .normal)
         $0.setTitleColor(.white, for: .normal)
         $0.backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
@@ -112,4 +112,17 @@ final class LoginView: UIView {
         }
         
     }
+    
+    
+    // - 나중에 리팩토링 예정 -
+    // 이메일 텍스트를 반환하는 메서드
+    func getEmail() -> String? {
+        return emailTextField.text
+    }
+    
+    // 비밀번호 텍스트를 반환하는 메서드
+    func getPassword() -> String? {
+        return passwordTextField.text
+    }
+    
 }
