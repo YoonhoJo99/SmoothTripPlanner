@@ -1,8 +1,8 @@
 //
-//  LoginView.swift
+//  SignUpView.swift
 //  SmoothTripPlanner
 //
-//  Created by 조윤호 on 6/2/24.
+//  Created by 조윤호 on 6/3/24.
 //
 
 import UIKit
@@ -10,19 +10,28 @@ import SnapKit
 import TextFieldEffects
 import Then
 
-final class LoginView: UIView {
+final class SignUpView: UIView {
     
     // 제목 라벨
     private let nameLabel = UILabel().then {
-        $0.text = "ABCDE" // 제목 미정..
+        $0.text = "회원가입" // 제목 미정..
         $0.textColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1) // 색깔 변경 예정
         $0.font = UIFont.systemFont(ofSize: 40, weight: .heavy)
         $0.textAlignment = .center
     }
     
-    // 로그인 입력 필드
+    // 이름 입력 필드
+    private let nameTextField = HoshiTextField().then {
+        $0.placeholder = "이름을 입력해 주세요"
+        $0.placeholderColor = .gray
+        $0.borderActiveColor = .gray
+        $0.borderInactiveColor = .gray
+        $0.placeholderFontScale = 1
+    }
+    
+    // 이메일 입력 필드
     private let emailTextField = HoshiTextField().then {
-        $0.placeholder = "이메일"
+        $0.placeholder = "이메일을 입력해 주세요"
         $0.placeholderColor = .gray
         $0.borderActiveColor = .gray
         $0.borderInactiveColor = .gray
@@ -31,20 +40,20 @@ final class LoginView: UIView {
     
     // 비밀번호 입력 필드
     private let passwordTextField = HoshiTextField().then {
-        $0.placeholder = "패스워드"
+        $0.placeholder = "패스워드를 입력해 주세요"
         $0.placeholderColor = .gray
         $0.borderActiveColor = .gray
         $0.borderInactiveColor = .gray
         $0.placeholderFontScale = 1
     }
     
-    // 로그인 버튼
-    private let loginButton = UIButton().then {
-        $0.setTitle("로그인", for: .normal)
-        $0.setTitleColor(.white, for: .normal)
-        $0.backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
-        $0.titleLabel?.font = UIFont.systemFont(ofSize: 20)
-        $0.layer.cornerRadius = 5
+    // 비밀번호 재확인 입력 필드
+    private let checkPasswordTextField = HoshiTextField().then {
+        $0.placeholder = "위와 동일한 패스워드를 입력해 주세요"
+        $0.placeholderColor = .gray
+        $0.borderActiveColor = .gray
+        $0.borderInactiveColor = .gray
+        $0.placeholderFontScale = 1
     }
     
     // 회원가입 버튼
@@ -56,6 +65,8 @@ final class LoginView: UIView {
         $0.layer.cornerRadius = 5
     }
     
+    // 네비게이션 바
+
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -75,9 +86,10 @@ final class LoginView: UIView {
     
     private func addViews() {
         addSubview(nameLabel)
+        addSubview(nameTextField)
         addSubview(emailTextField)
         addSubview(passwordTextField)
-        addSubview(loginButton)
+        addSubview(checkPasswordTextField)
         addSubview(signUpButton)
     }
     
@@ -87,8 +99,14 @@ final class LoginView: UIView {
             $0.leading.trailing.equalTo(self.safeAreaLayoutGuide).inset(100)
         }
         
-        emailTextField.snp.makeConstraints {
+        nameTextField.snp.makeConstraints {
             $0.top.equalTo(nameLabel).inset(80)
+            $0.leading.trailing.equalTo(self.safeAreaLayoutGuide).inset(40)
+            $0.height.equalTo(70)
+        }
+        
+        emailTextField.snp.makeConstraints {
+            $0.top.equalTo(nameTextField).inset(80)
             $0.leading.trailing.equalTo(self.safeAreaLayoutGuide).inset(40)
             $0.height.equalTo(70)
         }
@@ -99,17 +117,16 @@ final class LoginView: UIView {
             $0.height.equalTo(70)
         }
         
-        loginButton.snp.makeConstraints {
-            $0.top.equalTo(passwordTextField).inset(100)
+        checkPasswordTextField.snp.makeConstraints {
+            $0.top.equalTo(passwordTextField).inset(80)
             $0.leading.trailing.equalTo(self.safeAreaLayoutGuide).inset(40)
-            $0.height.equalTo(50)
+            $0.height.equalTo(70)
         }
-        
+    
         signUpButton.snp.makeConstraints {
-            $0.top.equalTo(loginButton).inset(70)
+            $0.top.equalTo(checkPasswordTextField).inset(120)
             $0.leading.trailing.equalTo(self.safeAreaLayoutGuide).inset(40)
             $0.height.equalTo(50)
         }
-        
     }
 }

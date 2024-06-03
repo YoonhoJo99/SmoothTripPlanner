@@ -22,7 +22,13 @@ final class LoginViewController: UIViewController {
     }
     
     func setupAddTarget() {
-        
+        loginView.signUpButton.addTarget(self, action: #selector(signUpButtonTapped), for: .touchUpInside)
+    }
+    
+    @objc func signUpButtonTapped() {
+        let signUpVC = SignUpViewController()
+        signUpVC.modalPresentationStyle = .fullScreen
+        present(signUpVC, animated: true, completion: nil)
     }
 
 }

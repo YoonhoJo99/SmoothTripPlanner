@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2099C931B030C959333B67B8 /* Pods_SmoothTripPlanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761A4BA67522F530FF2A4EF6 /* Pods_SmoothTripPlanner.framework */; };
+		FF8970F02C0D58B2004E1557 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8970EF2C0D58B2004E1557 /* SignUpViewController.swift */; };
+		FF8970F42C0D590B004E1557 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8970F32C0D590B004E1557 /* SignUpView.swift */; };
 		FF924DBF2C0CB7810074DAF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF924DBE2C0CB7810074DAF0 /* AppDelegate.swift */; };
 		FF924DC12C0CB7810074DAF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF924DC02C0CB7810074DAF0 /* SceneDelegate.swift */; };
 		FF924DC62C0CB7810074DAF0 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FF924DC52C0CB7810074DAF0 /* Base */; };
@@ -21,6 +23,8 @@
 		52392386DCA05B2D5B507E6F /* Pods-SmoothTripPlanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoothTripPlanner.release.xcconfig"; path = "Target Support Files/Pods-SmoothTripPlanner/Pods-SmoothTripPlanner.release.xcconfig"; sourceTree = "<group>"; };
 		761A4BA67522F530FF2A4EF6 /* Pods_SmoothTripPlanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmoothTripPlanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A51046D966DA0A259A8AECC1 /* Pods-SmoothTripPlanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoothTripPlanner.debug.xcconfig"; path = "Target Support Files/Pods-SmoothTripPlanner/Pods-SmoothTripPlanner.debug.xcconfig"; sourceTree = "<group>"; };
+		FF8970EF2C0D58B2004E1557 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		FF8970F32C0D590B004E1557 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		FF924DBB2C0CB7810074DAF0 /* SmoothTripPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmoothTripPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF924DBE2C0CB7810074DAF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF924DC02C0CB7810074DAF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				FF924DD92C0CBF530074DAF0 /* LoginViewController.swift */,
+				FF8970EF2C0D58B2004E1557 /* SignUpViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -114,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				FF924DD72C0CBE670074DAF0 /* LoginView.swift */,
+				FF8970F32C0D590B004E1557 /* SignUpView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -237,6 +243,8 @@
 				FF924DD82C0CBE670074DAF0 /* LoginView.swift in Sources */,
 				FF924DDA2C0CBF530074DAF0 /* LoginViewController.swift in Sources */,
 				FF924DC12C0CB7810074DAF0 /* SceneDelegate.swift in Sources */,
+				FF8970F42C0D590B004E1557 /* SignUpView.swift in Sources */,
+				FF8970F02C0D58B2004E1557 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
