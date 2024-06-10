@@ -10,10 +10,18 @@
 		2099C931B030C959333B67B8 /* Pods_SmoothTripPlanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761A4BA67522F530FF2A4EF6 /* Pods_SmoothTripPlanner.framework */; };
 		FF387DBA2C16CAAA00AA2BAD /* MainViewCotroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF387DB92C16CAAA00AA2BAD /* MainViewCotroller.swift */; };
 		FF387DBC2C16CAFE00AA2BAD /* DefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF387DBB2C16CAFE00AA2BAD /* DefaultViewController.swift */; };
-		FF387DBE2C16CB2A00AA2BAD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF387DBD2C16CB2A00AA2BAD /* MainView.swift */; };
 		FF387DC02C16CB5B00AA2BAD /* DefaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF387DBF2C16CB5B00AA2BAD /* DefaultView.swift */; };
 		FF387DC22C16CBB400AA2BAD /* DefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF387DC12C16CBB400AA2BAD /* DefaultManager.swift */; };
 		FF387DC42C16CC2D00AA2BAD /* MainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF387DC32C16CC2D00AA2BAD /* MainManager.swift */; };
+		FF387DC92C16D76C00AA2BAD /* WriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF387DC82C16D76C00AA2BAD /* WriteView.swift */; };
+		FF387DCB2C16D77300AA2BAD /* ReadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF387DCA2C16D77300AA2BAD /* ReadView.swift */; };
+		FF387DCD2C16D77A00AA2BAD /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF387DCC2C16D77A00AA2BAD /* SettingView.swift */; };
+		FF387DCF2C16D7F700AA2BAD /* WriteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF387DCE2C16D7F700AA2BAD /* WriteManager.swift */; };
+		FF387DD12C16D7FE00AA2BAD /* ReadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF387DD02C16D7FE00AA2BAD /* ReadManager.swift */; };
+		FF387DD32C16D80700AA2BAD /* SettingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF387DD22C16D80700AA2BAD /* SettingManager.swift */; };
+		FF387DD52C16D83800AA2BAD /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF387DD42C16D83800AA2BAD /* WriteViewController.swift */; };
+		FF387DD72C16D84400AA2BAD /* ReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF387DD62C16D84400AA2BAD /* ReadViewController.swift */; };
+		FF387DD92C16D84900AA2BAD /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF387DD82C16D84900AA2BAD /* SettingViewController.swift */; };
 		FF8970F02C0D58B2004E1557 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8970EF2C0D58B2004E1557 /* SignUpViewController.swift */; };
 		FF8970F42C0D590B004E1557 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8970F32C0D590B004E1557 /* SignUpView.swift */; };
 		FF8970F92C0D7613004E1557 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF8970F82C0D7613004E1557 /* GoogleService-Info.plist */; };
@@ -34,10 +42,18 @@
 		A51046D966DA0A259A8AECC1 /* Pods-SmoothTripPlanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoothTripPlanner.debug.xcconfig"; path = "Target Support Files/Pods-SmoothTripPlanner/Pods-SmoothTripPlanner.debug.xcconfig"; sourceTree = "<group>"; };
 		FF387DB92C16CAAA00AA2BAD /* MainViewCotroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewCotroller.swift; sourceTree = "<group>"; };
 		FF387DBB2C16CAFE00AA2BAD /* DefaultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultViewController.swift; sourceTree = "<group>"; };
-		FF387DBD2C16CB2A00AA2BAD /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		FF387DBF2C16CB5B00AA2BAD /* DefaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultView.swift; sourceTree = "<group>"; };
 		FF387DC12C16CBB400AA2BAD /* DefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultManager.swift; sourceTree = "<group>"; };
 		FF387DC32C16CC2D00AA2BAD /* MainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainManager.swift; sourceTree = "<group>"; };
+		FF387DC82C16D76C00AA2BAD /* WriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteView.swift; sourceTree = "<group>"; };
+		FF387DCA2C16D77300AA2BAD /* ReadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadView.swift; sourceTree = "<group>"; };
+		FF387DCC2C16D77A00AA2BAD /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		FF387DCE2C16D7F700AA2BAD /* WriteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteManager.swift; sourceTree = "<group>"; };
+		FF387DD02C16D7FE00AA2BAD /* ReadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadManager.swift; sourceTree = "<group>"; };
+		FF387DD22C16D80700AA2BAD /* SettingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingManager.swift; sourceTree = "<group>"; };
+		FF387DD42C16D83800AA2BAD /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
+		FF387DD62C16D84400AA2BAD /* ReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadViewController.swift; sourceTree = "<group>"; };
+		FF387DD82C16D84900AA2BAD /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		FF8970EF2C0D58B2004E1557 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		FF8970F32C0D590B004E1557 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		FF8970F72C0D75FC004E1557 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -85,6 +101,36 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FF387DC52C16D70C00AA2BAD /* Write, Read, Setting Manager */ = {
+			isa = PBXGroup;
+			children = (
+				FF387DCE2C16D7F700AA2BAD /* WriteManager.swift */,
+				FF387DD02C16D7FE00AA2BAD /* ReadManager.swift */,
+				FF387DD22C16D80700AA2BAD /* SettingManager.swift */,
+			);
+			path = "Write, Read, Setting Manager";
+			sourceTree = "<group>";
+		};
+		FF387DC62C16D72600AA2BAD /* Write, Read, Setting Views */ = {
+			isa = PBXGroup;
+			children = (
+				FF387DC82C16D76C00AA2BAD /* WriteView.swift */,
+				FF387DCA2C16D77300AA2BAD /* ReadView.swift */,
+				FF387DCC2C16D77A00AA2BAD /* SettingView.swift */,
+			);
+			path = "Write, Read, Setting Views";
+			sourceTree = "<group>";
+		};
+		FF387DC72C16D74900AA2BAD /* Write, Read, Setting Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FF387DD42C16D83800AA2BAD /* WriteViewController.swift */,
+				FF387DD62C16D84400AA2BAD /* ReadViewController.swift */,
+				FF387DD82C16D84900AA2BAD /* SettingViewController.swift */,
+			);
+			path = "Write, Read, Setting Controllers";
+			sourceTree = "<group>";
+		};
 		FF924DB22C0CB7810074DAF0 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +169,7 @@
 		FF924DD42C0CBE2C0074DAF0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FF387DC72C16D74900AA2BAD /* Write, Read, Setting Controllers */,
 				FF924DD92C0CBF530074DAF0 /* LoginViewController.swift */,
 				FF8970EF2C0D58B2004E1557 /* SignUpViewController.swift */,
 				FF387DB92C16CAAA00AA2BAD /* MainViewCotroller.swift */,
@@ -134,6 +181,7 @@
 		FF924DD52C0CBE3B0074DAF0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FF387DC52C16D70C00AA2BAD /* Write, Read, Setting Manager */,
 				FF8970FC2C0D839F004E1557 /* LoginManager.swift */,
 				FF8970FA2C0D7888004E1557 /* SignUpManager.swift */,
 				FF387DC12C16CBB400AA2BAD /* DefaultManager.swift */,
@@ -145,9 +193,9 @@
 		FF924DD62C0CBE400074DAF0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FF387DC62C16D72600AA2BAD /* Write, Read, Setting Views */,
 				FF924DD72C0CBE670074DAF0 /* LoginView.swift */,
 				FF8970F32C0D590B004E1557 /* SignUpView.swift */,
-				FF387DBD2C16CB2A00AA2BAD /* MainView.swift */,
 				FF387DBF2C16CB5B00AA2BAD /* DefaultView.swift */,
 			);
 			path = Views;
@@ -269,16 +317,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF387DD32C16D80700AA2BAD /* SettingManager.swift in Sources */,
+				FF387DCB2C16D77300AA2BAD /* ReadView.swift in Sources */,
 				FF387DBC2C16CAFE00AA2BAD /* DefaultViewController.swift in Sources */,
 				FF924DBF2C0CB7810074DAF0 /* AppDelegate.swift in Sources */,
+				FF387DC92C16D76C00AA2BAD /* WriteView.swift in Sources */,
 				FF387DC42C16CC2D00AA2BAD /* MainManager.swift in Sources */,
+				FF387DD52C16D83800AA2BAD /* WriteViewController.swift in Sources */,
 				FF387DC22C16CBB400AA2BAD /* DefaultManager.swift in Sources */,
 				FF8970FD2C0D839F004E1557 /* LoginManager.swift in Sources */,
+				FF387DD12C16D7FE00AA2BAD /* ReadManager.swift in Sources */,
+				FF387DCF2C16D7F700AA2BAD /* WriteManager.swift in Sources */,
 				FF924DD82C0CBE670074DAF0 /* LoginView.swift in Sources */,
 				FF924DDA2C0CBF530074DAF0 /* LoginViewController.swift in Sources */,
+				FF387DCD2C16D77A00AA2BAD /* SettingView.swift in Sources */,
+				FF387DD72C16D84400AA2BAD /* ReadViewController.swift in Sources */,
 				FF924DC12C0CB7810074DAF0 /* SceneDelegate.swift in Sources */,
 				FF8970FB2C0D7888004E1557 /* SignUpManager.swift in Sources */,
-				FF387DBE2C16CB2A00AA2BAD /* MainView.swift in Sources */,
+				FF387DD92C16D84900AA2BAD /* SettingViewController.swift in Sources */,
 				FF387DC02C16CB5B00AA2BAD /* DefaultView.swift in Sources */,
 				FF387DBA2C16CAAA00AA2BAD /* MainViewCotroller.swift in Sources */,
 				FF8970F42C0D590B004E1557 /* SignUpView.swift in Sources */,

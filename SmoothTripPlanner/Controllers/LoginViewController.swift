@@ -65,14 +65,13 @@ final class LoginViewController: UIViewController {
                 // 그 외의 이유로 로그인에 실패한 경우
             }
         }
-
         
     }
     
     //
     @objc func signUpButtonTapped() {
         let signUpVC = SignUpViewController()
-        signUpVC.modalPresentationStyle = .fullScreen
+//        signUpVC.modalPresentationStyle = .fullScreen
         present(signUpVC, animated: true, completion: nil)
     }
 
