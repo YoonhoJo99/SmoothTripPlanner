@@ -45,18 +45,27 @@ final class LoginViewController: UIViewController {
         }
         
         // 로그인 매니저를 통해 로그인 시도
-        loginManager.signIn { success, error in
+        loginManager.signIn { [weak self] success, error in
+            // self가 약한 참조로 캡처됩니다.
+            guard let self = self else { return } // self가 해제되었으면 클로저 종료
             if let error = error {
                 print("로그인 실패:", error.localizedDescription)
                 // 로그인 실패 시 사용자에게 알려줄 수 있는 작업 수행
             } else if success {
                 print("로그인 성공!")
                 // 로그인 성공 시 다음 화면으로 이동 또는 애플리케이션의 메인 기능 활성화
+                let mainVC = MainViewController()
+                
+                // mainManager 초기 셋팅을 여기서 수행
+                
+                mainVC.modalPresentationStyle = .fullScreen
+                present(mainVC, animated: true)
             } else {
                 print("로그인 실패: 알 수 없는 오류")
                 // 그 외의 이유로 로그인에 실패한 경우
             }
         }
+
         
     }
     
