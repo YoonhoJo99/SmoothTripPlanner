@@ -41,6 +41,26 @@ final class NewPlanManager {
         self.tripName = tripName
     }
     
+    //
+    func getStartDate() -> Date? {
+        return startDate
+    }
+    
+    //
+    func getEndDate() -> Date? {
+        return endDate
+    }
+    
+    //
+    func getPlace() -> String? {
+        return place
+    }
+    
+    //
+    func getTripName() -> String? {
+        return tripName
+    }
+    
     // 저장된 여행 정보를 반환하는 메서드
     func getPlan() -> (startDate: Date?, endDate: Date?, place: String?, tripName: String?) {
         return (startDate, endDate, place, tripName)

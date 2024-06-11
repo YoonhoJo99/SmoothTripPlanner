@@ -9,11 +9,12 @@ target 'SmoothTripPlanner' do
 
   # Firebase
   pod 'Firebase/Analytics' # Google Analytics
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
 
   # Pods for SmoothTripPlanner
   pod 'SnapKit', '~> 5.0.0'
   pod 'TextFieldEffects'
   pod 'Then'
   
-  pod 'Firebase/Auth'
 end

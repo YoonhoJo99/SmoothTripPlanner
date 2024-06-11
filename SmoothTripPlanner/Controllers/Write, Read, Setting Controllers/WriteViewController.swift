@@ -34,7 +34,7 @@ class WriteViewController: UIViewController {
         
         // NewPlanViewController로 이동
         let newPlanVC = NewPlanViewController()
-        newPlanVC.modalPresentationStyle = .fullScreen
+//        newPlanVC.modalPresentationStyle = .fullScreen
         present(newPlanVC, animated: true, completion: nil)
     }
 
