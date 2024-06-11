@@ -11,14 +11,6 @@ import Then
 
 final class WriteView: UIView {
     
-    // 제목 라벨
-    private let nameLabel = UILabel().then {
-        $0.text = "Write View" // 제목 미정..
-        $0.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1) // 색깔 변경 예정
-        $0.font = UIFont.systemFont(ofSize: 40, weight: .heavy)
-        $0.textAlignment = .center
-    }
-    
     // 플로팅 버튼
     lazy var floatingButton = UIButton(type: .custom).then {
         $0.backgroundColor = #colorLiteral(red: 0.25, green: 0.47, blue: 0.85, alpha: 1) // 버튼 색상
@@ -49,16 +41,10 @@ final class WriteView: UIView {
     }
     
     private func addViews() {
-        addSubview(nameLabel)
         addSubview(floatingButton)
     }
     
     private func setConstraints() {
-        nameLabel.snp.makeConstraints {
-            $0.centerX.equalToSuperview()
-            $0.centerY.equalToSuperview()
-        }
-        
         floatingButton.snp.makeConstraints {
             $0.width.height.equalTo(60) // 버튼 크기
             $0.trailing.equalToSuperview().inset(20) // 오른쪽에서 20포인트 떨어짐

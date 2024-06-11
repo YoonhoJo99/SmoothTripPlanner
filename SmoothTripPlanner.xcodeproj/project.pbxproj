@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2099C931B030C959333B67B8 /* Pods_SmoothTripPlanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761A4BA67522F530FF2A4EF6 /* Pods_SmoothTripPlanner.framework */; };
+		FF2132B72C18A63B006963B3 /* PlanViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2132B62C18A63B006963B3 /* PlanViewCell.swift */; };
+		FF2132B92C18AB41006963B3 /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2132B82C18AB41006963B3 /* Plan.swift */; };
 		FF387DBA2C16CAAA00AA2BAD /* MainViewCotroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF387DB92C16CAAA00AA2BAD /* MainViewCotroller.swift */; };
 		FF387DBC2C16CAFE00AA2BAD /* DefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF387DBB2C16CAFE00AA2BAD /* DefaultViewController.swift */; };
 		FF387DC02C16CB5B00AA2BAD /* DefaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF387DBF2C16CB5B00AA2BAD /* DefaultView.swift */; };
@@ -43,6 +45,8 @@
 		52392386DCA05B2D5B507E6F /* Pods-SmoothTripPlanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoothTripPlanner.release.xcconfig"; path = "Target Support Files/Pods-SmoothTripPlanner/Pods-SmoothTripPlanner.release.xcconfig"; sourceTree = "<group>"; };
 		761A4BA67522F530FF2A4EF6 /* Pods_SmoothTripPlanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmoothTripPlanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A51046D966DA0A259A8AECC1 /* Pods-SmoothTripPlanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoothTripPlanner.debug.xcconfig"; path = "Target Support Files/Pods-SmoothTripPlanner/Pods-SmoothTripPlanner.debug.xcconfig"; sourceTree = "<group>"; };
+		FF2132B62C18A63B006963B3 /* PlanViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanViewCell.swift; sourceTree = "<group>"; };
+		FF2132B82C18AB41006963B3 /* Plan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
 		FF387DB92C16CAAA00AA2BAD /* MainViewCotroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewCotroller.swift; sourceTree = "<group>"; };
 		FF387DBB2C16CAFE00AA2BAD /* DefaultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultViewController.swift; sourceTree = "<group>"; };
 		FF387DBF2C16CB5B00AA2BAD /* DefaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultView.swift; sourceTree = "<group>"; };
@@ -141,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				FF387DDD2C1750BC00AA2BAD /* NewPlanView.swift */,
+				FF2132B62C18A63B006963B3 /* PlanViewCell.swift */,
 			);
 			path = "Plan Views";
 			sourceTree = "<group>";
@@ -149,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				FF387DE12C175C3D00AA2BAD /* NewPlanManager.swift */,
+				FF2132B82C18AB41006963B3 /* Plan.swift */,
 			);
 			path = "Plan Models";
 			sourceTree = "<group>";
@@ -355,6 +361,8 @@
 				FF387DBC2C16CAFE00AA2BAD /* DefaultViewController.swift in Sources */,
 				FF387DE02C1750CC00AA2BAD /* NewPlanViewController.swift in Sources */,
 				FF924DBF2C0CB7810074DAF0 /* AppDelegate.swift in Sources */,
+				FF2132B92C18AB41006963B3 /* Plan.swift in Sources */,
+				FF2132B72C18A63B006963B3 /* PlanViewCell.swift in Sources */,
 				FF387DC92C16D76C00AA2BAD /* WriteView.swift in Sources */,
 				FF387DC42C16CC2D00AA2BAD /* MainManager.swift in Sources */,
 				FF387DE22C175C3D00AA2BAD /* NewPlanManager.swift in Sources */,
